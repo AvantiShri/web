@@ -1,0 +1,62 @@
+Which of the following is not an acceptable variable name?
+---
+glaceon_list
+Ans:simba_pride
+---
+While simba is lovely, a 'pride' is not yet a recognised datatype in python, and so, Eve would have rejected it. Eve actually had an issue with 'glaceon' as well, but compromised. For you.
+XXX
+Which text editor is better?
+---
+Ans:vi
+Emacs
+---
+Your programmer friends may tell you lots of things, but remember, regardless of which lab's server you find yourself on, you will ALWAYS have Vi. Also, It's more hardcore. Seriously. The next time some cocky silicon valley programmer tries to hit on you by showing off what a cool techie he is, just, like, mention that you use vi and watch his dick shrink.
+XXX
+What was the first sticker you ever used in a facebook conversation with Eve?
+---
+Ans:A salivating puppy
+A purple Despicable Me character whose hands were flailing in shock
+A cat with abnormally small limbs
+---
+You used the salivating puppydog when I told you I'd try to meet you at Singularity U for lunch. I chastised you heavily for using a sticker, but then eventually relented. You used the Despicable Me character when I told you I hadn't been exposed to Hayao Miyazaki (incidentally, I found his name just now by googling 'feminist japanese anime'). I think you used the cat after I said something sappy and asked you if there was a sticker for it. I then remarked that there was something very disturbing about the size of said cat's limbs. You ssshd me and told me not to question the proportions of anything vaguely anime. I believe that was what lead to you asking me about Miyazaki!
+XXX
+When did Eve call you a bawdy unchin-snouted barnacle?
+---
+That time you turned into a barnacle
+Ans:That time you mercilessly stalked Eve's entire profile picture collection even when Eve pleaded with you not to and selectively commented on some of the more embarassing ones so that they would pop up in current newsfeeds.
+That time Eve was practicing improv Shakespeare. Which is totally a thing.
+---
+While improv Shakespeare may well be a thing, and while 'bawdy unchin-snouted barnacle' was indeed generated using the Shakespeare Insult Kit, it was on the comment thread of Eve's first profile picture - "Beware Of Rhino" - that accusations were leveled about your latent barnacle nature.
+XXX
+Why is Eve better than you?
+---
+Ans: Eve eats lemons with the rind
+Ans: The RIND
+Ans: I'm sorry, Eve is just better, for life, for that.
+---
+THE RIND. Amateur.
+XXX
+Which of the following has caused Eve substantial distress at one point?
+---
+Balsamic vinegar
+A large and seemingly fluffy blanket
+Ans:The colour red in the context of something Chinese
+---
+I believe you were cleaning your room when you off-handedly decided to give me a description of this. I had also been sleeping in the office for the past few days in my coding frenzy, so I was especially susceptible due to...circumstances. Needless to say, I lost some productivity.
+XXX
+Which of the following is the number 3 represented in binary?
+---
+111
+100
+Ans:11
+---
+<11
+XXX
+What is entropy?
+---
+Ans:Colloquially, a measure of the disorder of a system
+The excrement of the Entro feline.
+A canopy, but made of Ents
+---
+Hopefully you pay attention this time.
+XXX

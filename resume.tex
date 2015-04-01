@@ -1,0 +1,174 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage[pdftex]{hyperref}
+
+\thispagestyle{empty}
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+
+\begin{document}
+
+\begin{changemargin}{-0.5in}{-0.5in} {\textbf{\Large Avanti Shrikumar}} \hfill \small{email me for address/phone $\vert$ avanti@cs.stanford.edu } \end{changemargin}
+                                                                                                                                                           
+\vspace*{.05in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\small{\vspace{17pt}
+	\textbf{Stanford University}\hfill \emph{Sep 2014 - present} \\
+	\begin{itemize}
+	   \item PhD in Computer Science under Professor Anshul Kundaje \\
+	\end{itemize}
+	\textbf{Massachusetts Institute of Technology}\hfill \emph{June 2013} \\
+	\begin{itemize}
+	   \item B.S. Computer Science with Molecular Biology, Minor in Mathematics \hfill \emph{GPA 5.0/5.0} \\
+	\end{itemize}}
+\end{body}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Experience}
+
+\begin{body}
+	\small{\vspace{17pt}
+	\textbf{Palantir Technologies Healthcare Team} - \emph{Forward Deployed Engineer} \hfill \emph{June 2013 - Sep 2014} \\
+   \begin{itemize}
+           \item Primary developer for team's first enterprise deployment. Created a way to integrate Palantir's two major platforms into a seamless experience; success was highlighted company-wide. Built multiple code libraries off-the-clock for use team-wide and company-wide; 3 ongoing patent filings/discussions.
+           \item Consistently rated high on bi-annual reviews, in which lead (Lekan Wang) told me I had at times done the work of 2-3 coders and had set a new standard for productivity among my teammates.
+   \end{itemize}
+	\textbf{MIT Computational Biology Group (Kellis Lab)} - \emph{SuperUROP} \hfill \emph{Sep 2012 - June 2013} \\
+   \begin{itemize}
+           \item Without supervision of a graduate student, applied a Hidden Markov Model to identify transcription factor binding sites using histone modification data. Won an award for outstanding research.
+   \end{itemize}
+	\textbf{MIT Boyer Lab} - \emph{UROP} \hfill \emph{Sep 2010 - Sep 2012} \\
+   \begin{itemize}
+           \item Analyzed high-throughput data on cardiac stem cells.  Exercised autonomy on how best to process the data to answer biological questions. As I matured as a researcher, I tested my own hypotheses and presented results to my Postdoctoral colleague. See publication.
+                 Supervisors: Professor Laurie Boyer, Dr. Joseph Wamstad.
+   \end{itemize}}
+\end{body}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%PUBLICATION
+
+\header{Publications}
+
+\begin{body}
+	\small{
+	\vspace{17pt}
+	\textbf{Cell} -  \emph{Sep 2012} \\
+   \begin{itemize}
+   	   \item Collaboration between Boyer lab at MIT and Gladstone Institute. I performed the bulk of bioinformatics analysis at the Boyer lab. \href{http://www.ncbi.nlm.nih.gov/pubmed/22981692}{\bf Dynamic and coordinated epigenetic regulation of developmental transitions in the cardiac lineage}.
+	  Cell 151, 206-220.\\
+	  \item 104 citations as of Sep 2014.   
+   \end{itemize}
+	\textbf{Circulation Research} -  \emph{Dec 2014} \\
+   \begin{itemize}
+   	   \item Collaboration between Boyer lab at MIT and Lee lab at Harvard. I analysed RNA-seq data to study transcriptional reversion. \href{http://www.ncbi.nlm.nih.gov/pubmed/25477501}{\bf Transcriptional Reversion of Cardiac Myocyte Fate During Mammalian Cardiac Regeneration}. Circ Res. 2014 Dec 4. pii: CIRCRESAHA.114.304269. 
+   \end{itemize}
+   
+   }
+   
+\end{body}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skillz
+\header{Skills}
+
+\begin{body}
+	\small{
+	\vspace{17pt}
+	\textbf{Programming}
+	\begin{itemize}
+	      \item Primary languages: Java (primary language at Palantir), Python (primary language during PhD; personal emphasis on code reusability in contrast to `hacky' culture of bioinformatics), Perl (for ``quick and dirty'')
+		  \item VPython: Personal coding projects in high school. Simulations of Rubik's Cube and Sudokube: \href{http://www.youtube.com/watch?v=fLvs5nvT2j8}{http://www.youtube.com/watch?v=fLvs5nvT2j8}
+		  \item Moderate experience in SQL/PostgreSQL, Javascript/CSS/HTML, R and MATLAB.
+	\end{itemize}
+	\textbf{Interesting}
+	\begin{itemize}
+	      \item Calculator art with parametric equations \href{http://www.youtube.com/watch?v=r-I5M--fvJQ}{http://www.youtube.com/watch?v=r-I5M-\--fvJQ})
+	      \item Acted in multiple student theater productions at MIT, directed for one.
+	\end{itemize}
+	}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards
+\header{Achievements \& Honors}
+
+\begin{body}
+	  \small{	  
+	  \vspace{17pt}
+	   \textbf{SuperUROP Outstanding Research Award}
+	    \begin{itemize}
+	     \item For project ``Doubling the precision of DNA binding site prediction using a novel dataset" in Kellis lab
+	    \end{itemize}
+	  \textbf{American Institute of Chemical Engineers Sophomore Academic Excellence Award}
+	    \begin{itemize}
+	     \item Awarded to the student with the highest GPA among chemical engineering sophomores at MIT. 
+	    \end{itemize}
+	  \textbf{IGCSE examinations}
+	    \begin{itemize}
+	     \item The IGCSE was administered in roughly 300 schools in India. I had the highest score in India in Extended Mathematics Without Coursework (June 2006), Physics(June 2007) and Geography (June 2007).
+	    \end{itemize}
+ 	   }
+\end{body}
+\end{document}

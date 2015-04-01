@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title> Aditi Muralidharan </title>
+	<link rel="stylesheet" href="default.css" type="text/css">
+	<meta name="keywords" content="Aditi Shrikumar Muralidharan, Aditi Shrikumar, Aditi Muralidharan">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17364290-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+	<link href="default.css" rel="stylesheet" type="text/css">
+
+
+<div class="navigation">
+	<a class="menu" href="index.html"> Home </a>
+	<a class="present" href="projects.html" > Research </a> 
+	<a class="menu" href="teaching.html"> Teaching </a> 
+	<a class = "menu" href="resume.html"> Resume </a>
+	<a class="menu" href="bio.html"> Bio </a>
+	
+		<h1 class="projects">
+			<a href="projects.html" class="menu">Current  </a>
+			<a href="previous.html" class="present"> Previous </a>
+		</h1>
+</div>
+<div class ="content">
+	<ul class="research">
+	  
+			<li>
+			<h3>Word Sense Disambiguation and Hierarchical Faceted Metadata</h3>
+			<table>
+				<tr>
+					<td class="research">
+							<img id="flamenco" src="flamenco.png">
+					</td>
+					<td class="researchinfo">
+						<p>
+							Hierarchical faceted metadata are browsing interfaces that narrow a search through a set of items using multiple different properties of those items. e.g. price, size, and heel height, for shoes. For large collections of items, it is expensive and entirely too time-consuming to manually place every single item into a place within the browsing structure. <a href="castanet.pdf">Castanet</a> [Stoica and Hearst, 2007] is an algorithm for automatically creating such structures from metadata associated with each item in the collection.  
+						</p>
+						<p >
+						I worked on integrating WSD into Castanet, in the process, I implement and learned firsthand the behaviors of <a href="graphBasedWSD.pdf">graph-based</a>, and <a href="LDAWN.pdf">LDA-based</a> disambiguation strategies, as well as the frustrations of actually using <a href="http://wordnet.princeton.edu">WordNet</a> for anything.
+						</p>
+						<p>
+							I also extended Castanet to operate on unstructured metadata - such as the tags on images in the <a href="http://http://www.flickr.com/commons/">flickr commons</a> collection of public images. They can be browsed using the <a href="http://flamenco.berkeley.edu">flamenco</a> faceted browsing interface <a href="http://orange.sims.berkeley.edu/cgi-bin/flamenco.cgi/flickr/Flamenco">here</a>.
+							</p>
+					</td>
+				</tr>
+			</table>
+		</li>
+		<li>
+				<h3>Attempted Improvements to Graph-based WSD</h3>
+				<table>
+					<tr>
+						<td class="research">
+							<img id="graphbased" src="graphwsd.png">
+						</td>
+						<td class="researchinfo">
+							<p>
+								Graph based word sense disambiguation (WSD) is a <a href="http://scholar.google.com/scholar?q=graph-based%20word%20sense%20disambiguation&oe=utf-8&rls=org.mozilla:en-US:official&client=firefox-a&um=1&ie=UTF-8&sa=N&hl=en&tab=ws">class of approaches</a> to choosing the correct sense of an ambiguous word for a given context. Such methods are based on constructing a graph which is a representation of the various senses of the words in a context, with the different senses of words as nodes, and with edges between nodes weighted by some measure of semantic similarity. Typically, some measure of graph centrality is applied to the graph to identify the most dominant sense for each word in the string. These methods perform at the state of the art. 
+							</p>
+							<p>
+								Over the course of a year, I investigated various graph-based WSD algorithms, and devised modifications to both the algorithms and the similarity metrics, as described in this project <a href="graphWSDreport.pdf">report</a>. No improvements over existing performance were achieved.
+							</p>
+						</td>
+					</tr>
+				</table>
+		</li>
+
+	</ul>
+</div>
+</body>

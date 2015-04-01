@@ -1,0 +1,487 @@
+/*
+ID-specific definitions
+*/
+
+
+#projects{
+	width:650;
+}
+
+/*photos*/
+#personalphoto{
+	width:150;
+	vertical-align: middle;
+}
+
+#me{
+	height:250px
+}
+
+#bio{
+	style=height:1;
+}
+
+#nytimesphoto{
+	width:90;
+	height:310;
+}
+
+#digitalhumanities{
+	width:90;
+	height:230;
+}
+
+#graphbased{
+	width:158;
+}
+
+#flamenco{
+	width:158;
+	height:355;
+}
+
+#teaching{
+	width:230;
+}
+#calculatorart{
+	width:200px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#scalablesudokube{
+	width:200px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+/*
+	Class-specific definitions
+*/
+
+/* Basics: H1 through H5, img, p */
+
+h1,h2,h3,h4,h5, div.navigation {
+    text-transform:uppercase;
+	text-align:center;
+    text-shadow:0px 1px 1px #FFF;
+	color:#444;
+	font-family: Fabrica, helvetica, arial, sans-serif ;
+}
+
+h3 {
+	font-size: 140%;
+	line-height: 90%;
+	margin-top: 30px;
+	text-align:left;
+	margin-left:30px;
+}
+h4 {
+	font-size: 120%;
+}
+h5 {
+	font-size: 100%;
+}
+
+img {
+	border: 5px solid white;
+	 -moz-box-shadow: 3px 3px 6px #333; /* FF3.5+ */
+  -webkit-box-shadow: 3px 3px 6px #333; /* Saf3.0+, Chrome */
+          box-shadow: 3px 3px 6px #333; /* Opera 10.5, IE 9.0 */
+}
+
+p {
+	padding-left:10px;
+	width:400;
+	line-height:140%;
+}
+
+
+/* 
+ * Background
+ */
+
+body {
+    min-height:1000px;
+	font-family:Fabrica,georgia, arial,serif;		
+	
+	font-size: 14px;
+	
+	padding-top:20px;
+	color: #333;
+    background: #F2FDFF;
+	/*background-image:url("bg.png");
+	background: #005469;
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.08, rgb(40, 40, 40)),color-stop(0.5, rgb(86, 80, 80)));
+	background-image: -moz-linear-gradient(center bottom,rgb(40, 43, 46) 8%, rgb(80, 83, 86) 50%);
+	*/
+}
+
+
+/* 
+ * Navigation 
+ */
+
+div.navigation {
+	text-align: center;
+	padding:10px;
+	width: 700px;
+	margin-left: auto; /* center it*/
+	margin-right:auto;
+	background:#FFF;
+  margin-bottom:10px;
+	-moz-box-shadow: 0px 0px 10px #ddd; /* FF3.5+ */
+	-webkit-box-shadow: 0px 0px 5px #ddd; /* Saf3.0+, Chrome */
+	box-shadow: 0px 0px 10px #ddd; /* Opera 10.5, IE 9.0 */
+
+}
+
+a{
+	color: #2d8cb5;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a:visited {
+	color: #888;
+}
+
+
+
+.menu {
+	font-weight:600;
+  font-size: 130%;
+  padding-right: 10px;
+	padding-left: 10px;
+  line-height: 120%;
+  
+}
+
+a.menu, a.menu:visited {
+	text-decoration:none;
+	padding-top: 2px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-bottom: 5px;
+	padding-top:5px;
+	margin:3px;
+	border:0px solid white;
+	color:#333;
+
+}
+
+a.menu:hover, .present{
+	font-weight:600;
+  	font-size: 130%;
+  	padding-left:30px;
+	padding-right:30px;
+  	line-height: 120%;
+	margin:3px;
+	text-decoration:none;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	color:#2d8cb5;
+ 
+}
+
+a.present{
+	color:#225577;
+}
+
+div.navigation h1 a, div.navigation h1 a:hover, div.navigation h1 a.present, div.navigation h1 a.menu{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/**
+	Social Media Menu
+**/
+
+div.socialmedia ul{
+	list-style-type: none;
+	text-align: center;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+    margin: 0px 0px 0px 0px;
+	position:relative;
+	left:0px;
+}
+
+img.socialmedia{
+	height: 60px;
+	width: 60px;
+	-moz-box-shadow:0px 0px;
+	-webkit-box-shadow:0px 0px;
+	box-shadow:0px 0px;
+	border:0px;
+	position:relative;
+	top:30px;
+
+}
+li.socialmedia {
+	display: inline;
+	margin-left: 20px;
+	margin-right:20px;
+	position:relative;
+	
+}
+
+div.socialmedia ul li a, div.socialmedia ul li a:visited{
+	color: #333;
+    font-size: 130%;
+	padding:20px 10px 20px 10px;
+	position:relative;
+	top: -25px;
+
+
+	
+}
+div.socialmedia ul li a:hover{
+	color:#2d8cb5;
+
+}
+/* 
+ * Content
+ */
+div.content, div.news, div.socialmedia{
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:20px;
+	padding-top:1px;
+	margin-bottom:10px;
+	background:#FEFEFE;
+	width: 700px;
+	margin-left: auto;
+	margin-right:auto;
+	font-size:110%;
+	-moz-box-shadow: 0px 0px 10px #ddd; /* FF3.5+ */
+	-webkit-box-shadow: 0px 0px 5px #ddd; /* Saf3.0+, Chrome */
+	box-shadow: 0px 0px 10px #ddd; /* Opera 10.5, IE 9.0 */
+
+	
+}
+div.socialmedia{
+	padding-bottom: 1px;
+}
+
+/* Tables */
+
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+	font:inherit;
+}
+
+td {
+	width: 300;
+	text-align: justify;
+	padding-bottom:5px;
+	padding-top: 5px;
+}
+
+th,td {
+	vertical-align: top;
+	font:inherit;
+}
+
+/*  Resume  formatting */
+.resume-right{
+	text-align: left;
+}
+
+td.resume-left{
+	width:200;
+	text-align:left;
+}
+td.a{
+	width:10;
+	padding-right:10px;
+}
+td.b{
+	width:300;
+	padding-right:10px;
+}
+td.c{
+	width:60;
+	padding-right:10px;
+}
+td.d{
+	width:90;
+	padding-right:10px;
+}
+td.e{
+	width:10;
+}
+
+blockquote {
+	padding-left: 10px;
+}
+
+
+dl,dt,dd,ul,ol,li {
+	margin: 5;
+}
+
+
+ul {
+	position:relative;
+	left: -20;
+}
+
+
+/* Research page formatting*/
+.research{	
+}
+
+td.research{
+	width:100px;
+}
+td.people img{
+	width:90px;
+}
+td.people{
+	width:120px;
+}
+td.peopleinfo{
+	width:200px;
+}
+td.peopleinfo p{
+	width:190px;
+	padding-right:10px;
+	text-align:left;
+}
+td.teaching{
+	padding-left:10px;
+}
+ul.research{
+	list-style-type: none;
+	margin:0px 10px 0px 10px;
+}
+li.research{
+	margin:0;
+}
+ul.research li table{
+	background:#FFF;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #AAA;	
+}
+ul.research li h3{
+	padding:0px, 0px, 15px, 0px;
+	text-align:center;
+}
+dt{
+	padding-top: 10;
+}
+
+/* intro page*/
+
+img.email{
+	-moz-box-shadow: none; /* FF3.5+ */
+  -webkit-box-shadow: none; /* Saf3.0+, Chrome */
+          box-shadow: none; /* Opera 10.5, IE 9.0 */
+					height:22px;
+}
+
+img.twitter{
+	width:20px;
+	height:20px;
+	-moz-box-shadow: none; /* FF3.5+ */
+  -webkit-box-shadow: none; /* Saf3.0+, Chrome */
+          box-shadow: none; /* Opera 10.5, IE 9.0 */
+}
+/* News*/
+
+ul.news {
+	list-style-type: none;
+	padding-top:1px;
+	height:300px;
+	overflow:auto;
+}
+
+div.news h2{
+	margin-bottom:1px;
+}
+ul.news li{
+	margin: 10px 5px 10px 10px ;
+}
+
+span.date {
+	color:#333;
+	font-weight:bold;
+	padding-right: 5px;
+	border-right: 1px dotted #AAA;
+}
+
+/** 
+    Fonts
+**/
+
+@font-face{
+    font-family:Quattrocento;
+    font-weight:regular;
+    src: url('syle/Quattrocento/Quattrocento-Regular.ttf');
+}
+@font-face{
+    font-family:Fabrica;
+    font-weight:regular;
+    src:url('style/Lato/Lato-Light.ttf');
+}
+
+/** Scroll Bars **/
+
+/* Turn on a 20x20 scrollbar */
+.news::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+.news::-webkit-scrollbar-button:vertical {
+    background-color: white;
+}
+
+/* Turn on single button up on top, and down on bottom */
+.news::-webkit-scrollbar-button:start:decrement,
+.news::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+ 
+/* Turn off the down area up on top, and up area on bottom */
+.news::-webkit-scrollbar-button:vertical:start:increment,
+.news::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+
+/* Place The scroll down button at the bottom */
+.news::-webkit-scrollbar-button:vertical:increment {
+    background-image: url(style/img/down.png);
+    background-size: 20px;
+}
+ 
+/* Place The scroll up button at the up */
+.news::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url(style/img/up.png);
+    background-size: 20px;
+    background-position:bottom left;
+}
+
+ 
+/* Track below and above */
+.news::-webkit-scrollbar-track-piece {
+    background-color: white;
+    border:none;
+    margin:5px;
+}
+ 
+/* The thumb itself */
+.news::-webkit-scrollbar-thumb:vertical {
+    background-color: white;
+    border-radius:5px;
+    border:1px solid #bbb;
+}
+ 

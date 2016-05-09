@@ -53,6 +53,11 @@ ID-specific definitions
 	padding-top:5px;
 	padding-bottom:5px;
 }
+#pi_rap{
+	width:200px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
 
 /*
 	Class-specific definitions
@@ -74,6 +79,11 @@ h3 {
 	margin-top: 30px;
 	text-align:left;
 	margin-left:30px;
+}
+h3.projects {
+	text-align:center;
+	margin-top: 30px;
+	margin-left:5px;
 }
 h4 {
 	font-size: 120%;
@@ -285,6 +295,25 @@ td {
 	padding-top: 5px;
 }
 
+center.summary {
+	text-align: left;
+	width: 500;
+	margin-left:auto;
+	margin-right:auto;
+}
+td.talksummary-left {
+	width: 400;
+	text-align: left;
+	padding-bottom:0px;
+	padding-top:0px;
+}
+td.talksummary-right {
+    width: 100;
+	text-align: left;
+	padding-bottom:0px;
+	padding-top:0px;
+}
+
 th,td {
 	vertical-align: top;
 	font:inherit;
@@ -339,8 +368,16 @@ ul {
 .research{	
 }
 
+p.caption{
+    text-align:justify;
+    width:450px
+}
+
 td.research{
 	width:100px;
+}
+td.researchinfo{
+	vertical-align:middle;
 }
 td.people img{
 	width:90px;

@@ -56,6 +56,7 @@
 					<ul>
 				        <li>Developed <a href="https://github.com/kundajelab/deeplift">DeepLIFT</a> for explaining the individual predictions of a deep learning model</li>	
 					<li>Developed <a href="https://www.youtube.com/watch?v=fXPGVJg956E">TF-MoDISco</a> for understanding the patterns learned by a deep learning model.</li>
+					<li>Developed <a href="https://arxiv.org/abs/1802.07024">Curve Optimization</a>, a novel method for deciding which examples a predictive model should abstain on.</li>
 					<li>Developed <a href="https://www.biorxiv.org/content/early/2017/07/07/146431">Separable Fully-Connected Layers</a> and <a href="https://www.biorxiv.org/content/early/2017/01/27/103663">Reverse-Complement Parameter Sharing</a> to exploit unique properties of genomic data for deep learning.</li>
 					<li>Developed an <a href="https://github.com/kundajelab/simdna">engine for creating simulated genomic datasets</a>; used in <a href="https://kundajelab.github.io/dragonn/">DragoNN</a>.</li>
 					<li>Developed an <a href="https://github.com/kundajelab/momma_dragonn">internal framework</a> to facilitate the training of deep learning models in the Kundaje lab.</li>
@@ -88,7 +89,7 @@
 					<a href="http://proceedings.mlr.press/v70/shrikumar17a">ICML 2017</a><br> Aug 2017
 				</td>
 				<td class="resume-right">
-					<em>Learning Important Features Through Propagating Activation Differences</em><br> Paper <a href="https://arxiv.org/pdf/1704.02685">here</a>.
+					<em>Learning Important Features Through Propagating Activation Differences</em><br> Video and slides <a href="https://vimeo.com/238275076">here</a> and <a href="https://docs.google.com/file/d/0B15F_QN41VQXSXRFMzgtS01UOU0/edit?usp=docslist_api&filetype=mspresentation">here</a>, paper <a href="https://arxiv.org/pdf/1704.02685">here</a>.
 				</td>
 			</tr>
 			<tr>
@@ -133,12 +134,22 @@
 		<table>
 			<tr>
 				<td class="resume-left">
+			        arXiv<br> Feb 2018
+				</td>
+				<td class="resume-right">
+			    <a href="https://arxiv.org/abs/1802.07024">Selective Classification via Curve Optimization</a>.<br>
+			    <em>Amr Alexandari*, <u>Avanti Shrikumar*</em>&dagger;</u>, <em>Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br>
+				 Novel method for identifying examples for a predictive model to abstain on that is based on directly optimizing metrics such as auROC or auPRC<br><br>
+			</td>
+		    </tr>
+			<tr>
+				<td class="resume-left">
 			        ICML Comp Bio Workshop (Spotlight Talk)<br> June 2017
 				</td>
 				<td class="resume-right">
-						Adapts deep learning models for genomics by leveraging known patterns in transcription factor binding data.<br><br>
 			    <a href="https://www.biorxiv.org/content/early/2017/06/10/146431">Separable Fully-Connected Layers Improve Deep Learning Models For Genomics</a>.<br>
-			    <em>Amr Alexandari*, Avanti Shrikumar*, Anshul Kundaje</em>.
+			    <em>Amr Alexandari*, <u>Avanti Shrikumar</u>*, Anshul Kundaje</em>. <br>*co-first authors<br><br>
+						Adapts deep learning models for genomics by leveraging known patterns in transcription factor binding data.<br><br>
 			</td>
 		    </tr>
 			<tr>
@@ -146,8 +157,8 @@
 			        BioArXiv <br> May 2017
 				</td>
 				<td class="resume-right">
+			    <a href="https://www.biorxiv.org/content/early/2017/05/28/142760">Opportunities And Obstacles For Deep Learning In Biology And Medicine</a><br><br>
 						Collaboratively written review on deep learning for biology and medicine. I wrote the <a href="https://github.com/greenelab/deep-review/blob/71bb07775266206a497c013796e2c6c2258b8a78/sections/06_discussion.md#interpretation">section on interpretation.</a> Note that the version that appeared after proofreading by the senior authors was stripped down, likely due to word limits. I have linked to the original submission from my end.<br><br>
-			    <a href="https://www.biorxiv.org/content/early/2017/05/28/142760">Opportunities And Obstacles For Deep Learning In Biology And Medicine</a><br>
 			</td>
 		    </tr>
 			<tr>
@@ -155,9 +166,9 @@
 			        ICML <br> April 2017
 				</td>
 				<td class="resume-right">
-						Updated version of May 2016 work. Details an algorithm to highlight important features for a given input example based on propagating activation differences. Has significant advantages over gradient-based methods, including a novel approximation of Shapely values based on considering different orders of the inputs. Code <a href="https://github.com/kundajelab/deeplift">here</a>.<br><br>
 			    <a href="https://arxiv.org/abs/1704.02685">Learning Important Features Through Propagating Activation Differences</a>.<br>
-			    <em>Avanti Shrikumar, Peyton Greenside, Anshul Kundaje</em>.
+			    <em><u>Avanti Shrikumar</u>, Peyton Greenside, Anshul Kundaje</em>.<br><br>
+						Updated version of May 2016 work. Details an algorithm to highlight important features for a given input example based on propagating activation differences. Has significant advantages over gradient-based methods, including a novel approximation of Shapely values based on considering different orders of the inputs. Code <a href="https://github.com/kundajelab/deeplift">here</a>.<br><br>
 			</td>
 		    </tr>
 			<tr>
@@ -165,9 +176,9 @@
 			        BioArXiv <br> January 2017
 				</td>
 				<td class="resume-right">
-						Adapts deep learning models for genomics by leveraging the reverse-complement property of DNA sequence.<br><br>
 			    <a href="https://www.biorxiv.org/content/early/2017/01/27/103663">Reverse-Complement Parameter Sharing Improves Deep Learning Models For Genomics</a>.<br>
-			    <em>Avanti Shrikumar*, Peyton Greenside*, Anshul Kundaje</em>.
+			    <em><u>Avanti Shrikumar</u>*, Peyton Greenside*, Anshul Kundaje</em>.<br>*co-first authors<br><br>
+						Adapts deep learning models for genomics by leveraging the reverse-complement property of DNA sequence.<br><br>
 			</td>
 		    </tr>
 			<tr>
@@ -175,26 +186,31 @@
 				arXiv <br> May 2016
 				</td>
 				<td class="resume-right">
-					See ICML 2017 paper for updated version.<br><br>
                     <a href="http://arxiv.org/abs/1605.01713">Not Just a Black Box: Learning Important Features Through Propagating Activation Differences</a>.<br>
-                    <em>Avanti Shrikumar, Peyton Greenside, Anna Shcherbina, Anshul Kundaje</em>.
+                    <em><u>Avanti Shrikumar</u>, Peyton Greenside, Anna Shcherbina, Anshul Kundaje</em>.<br><br>
+					See ICML 2017 paper for updated version.<br><br>
                 </td>
             </tr>
-			<tr>
-				<td class="resume-left">
-				Cell <br> Sep 2012
-				</td>
-				<td class="resume-right">
-					Collaboration between Boyer lab at MIT and Gladstone Institutes. I performed the bulk of bioinformatics analysis at the Boyer lab. 204 citations as of Feb 2016.<br><br> <a href="http://www.ncbi.nlm.nih.gov/pubmed/22981692">Dynamic and coordinated epigenetic regulation of developmental transitions in the cardiac lineage</a>. Cell 151, 206-220.<br><em>Wamstad JA, Alexander JM, Truty RM, <u>Shrikumar A</u>, Li F, Eilertson KE, Ding H, Wylie JN, Pico AR, Capra JA, Erwin G, Kattman SJ, Keller GM, Srivastava D, Levine SS, Pollard KS, Holloway AK, Boyer LA, Bruneau BG.</em><br>
-				</td>
-			</tr>
 			<tr>
 				<td class="resume-left">
 				Circulation Research
 				<br>Dec 2014
 				</td>
 				<td class="resume-right">
-					Collaboration between Boyer lab at MIT and Lee lab at Harvard. I analysed RNA-seq data to study transcriptional reversion. <br><br><a href="http://www.ncbi.nlm.nih.gov/pubmed/25477501">Transcriptional Reversion of Cardiac Myocyte Fate During Mammalian Cardiac Regeneration.</a> Circ Res. 2014 Dec 4. pii: CIRCRESAHA.114.304269.<br><em>O'Meara CC, Wamstad JA, Gladstone RA, Fomovsky GM, Butty VL, <u>Shrikumar A</u>, Gannon JB, Boyer LA, Lee RT</em>
+					<a href="http://www.ncbi.nlm.nih.gov/pubmed/25477501">Transcriptional Reversion of Cardiac Myocyte Fate During Mammalian Cardiac Regeneration</a>.<br>
+                                        <em>O'Meara CC, Wamstad JA, Gladstone RA, Fomovsky GM, Butty VL, <u>Shrikumar A</u>, Gannon JB, Boyer LA, Lee RT</em><br><br>
+
+					Collaboration between Boyer lab at MIT and Lee lab at Harvard. I analysed RNA-seq data to study transcriptional reversion. <br><br>
+				</td>
+			</tr>
+			<tr>
+				<td class="resume-left">
+				Cell <br> Sep 2012
+				</td>
+				<td class="resume-right">
+                                        <a href="http://www.ncbi.nlm.nih.gov/pubmed/22981692">Dynamic and coordinated epigenetic regulation of developmental transitions in the cardiac lineage</a>.<br>
+                                        <em>Wamstad JA, Alexander JM, Truty RM, <u>Shrikumar A</u>, Li F, Eilertson KE, Ding H, Wylie JN, Pico AR, Capra JA, Erwin G, Kattman SJ, Keller GM, Srivastava D, Levine SS, Pollard KS, Holloway AK, Boyer LA, Bruneau BG.</em><br><br>
+					Collaboration between Boyer lab at MIT and Gladstone Institutes. I performed the bulk of bioinformatics analysis at the Boyer lab. 355 citations as of Jan 2018.<br><br>
 				</td>
 			</tr>
 		</table>

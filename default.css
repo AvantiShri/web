@@ -100,8 +100,9 @@ img {
 }
 
 p {
-	padding-left:10px;
-	width:400;
+	padding-left:40px;
+	padding-right:40px;
+	/*width:400;*/
 	line-height:140%;
 }
 
@@ -357,8 +358,7 @@ dl,dt,dd,ul,ol,li {
 	margin: 5;
 }
 
-
-ul {
+td.resume-right ul {
 	position:relative;
 	left: -20;
 }

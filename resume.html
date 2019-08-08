@@ -57,7 +57,7 @@
 				        <li>Developed <a href="https://github.com/kundajelab/deeplift">DeepLIFT</a> for explaining the individual predictions made by a deep learning model</li>	
 					<li>Developed <a href="https://github.com/kundajelab/tfmodisco">TF-MoDISco</a> for understanding the patterns learned by a deep learning model.</li>
 					<li>Developed <a href="https://arxiv.org/abs/1802.07024">Curve Optimization</a>, a novel method for deciding which examples a predictive model should abstain on.</li>
-					<li>Developed <a href="https://www.biorxiv.org/content/early/2018/11/06/457606">Gkmexplain</a> for explaining the individual predictions made by nonlinear gapped-kmer Support Vector Machines.</li>
+					<li>Developed <a href="https://academic.oup.com/bioinformatics/article/35/14/i173/5529147">GkmExplain</a> for explaining the individual predictions made by nonlinear gapped-kmer Support Vector Machines.</li>
 					<li>Developed <a href="https://www.biorxiv.org/content/early/2017/07/07/146431">Separable Fully-Connected Layers</a> and <a href="https://www.biorxiv.org/content/early/2017/01/27/103663">Reverse-Complement Parameter Sharing</a> to exploit unique properties of genomic data for deep learning.</li>
 					<li>Developed an <a href="https://github.com/kundajelab/simdna">engine for creating simulated genomic datasets</a>; used in <a href="https://kundajelab.github.io/dragonn/">DragoNN</a>.</li>
 					<li>Developed an <a href="https://github.com/kundajelab/momma_dragonn">internal framework</a> to facilitate the training of deep learning models in the Kundaje lab.</li>
@@ -129,19 +129,26 @@
 		<h2><a name="publications">Selected Publications</a></h2>
 		<table>
 			<tr>
+				<td class="resume-left">Proceedings of the ISMB<br>July 2019</td>
+				<td class="resume-right">
+			    <a href="https://academic.oup.com/bioinformatics/article/35/14/i173/5529147">Gkmexplain: Fast and Accurate Interpretation of Nonlinear Gapped k-mer SVMs</a>.<br>
+			    <em><u>Avanti Shrikumar*&dagger;</u>, Eva Prakash*</em>, <em>Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br> 
+                                 Computationally efficient algorithm for explaining individual predictions made by nonlinear gapped-kmer SVMs trained on genomic sequences.<br><br></td>
+			</tr>
+			<tr>
+				<td class="resume-left">Nature Biotechnology<br>May 2019</td>
+				<td class="resume-right">
+			    <a href="https://www.nature.com/articles/s41587-019-0140-0">Kipoi: accelerating the community exchange and reuse of predictive models for genomics</a>.<br>
+			    <em>&#381;iga Avsec*</em>&dagger;<em>, Roman Kreuzhuber*,  Johnny Israeli, Nancy Xu, Jun Cheng,  <u>Avanti Shrikumar</u>, Abhimanyu Banerjee,  Daniel S. Kim,  Lara Urban, Anshul Kundaje</em>&dagger;<em>,  Oliver Stegle</em>&dagger;<em>, Julien Gagneur</em>&dagger;<br> *co-first authors <br> &dagger; co-corresponding authors <br><br> 
+                                 Model zoo for genomics. I was involved in designing the API during the early stages and converted the DeepBind models to Keras using the code <a href="https://github.com/kundajelab/DeepBindToKeras">here</a><br><br></td>
+			</tr>
+			<tr>
 				<td class="resume-left">arXiv<br>Jan 2019</td>
 				<td class="resume-right">
 			    <a href="https://arxiv.org/abs/1901.06852">Calibration with Bias-Corrected Temperature Scaling Improves Domain Adaptation Under Label Shift in Modern Neural Networks</a>.<br>
 			    <em><u>Avanti Shrikumar&dagger;</u></em>,<em>Anshul Kundaje</em>&dagger;.<br> &dagger; co-corresponding authors<br><br>
 				 Proposed a modification of <a href="https://arxiv.org/abs/1706.04599">Temperature Scaling</a> that corrects for systematic biases in the calibrated probabilities. This allows domain adaptation under label shift to be performed using an EM algorithm, outperforming the recently-proposed <a href="https://arxiv.org/abs/1802.03916">Black Box Shift Estimation (ICML 2018)</a>.<br><br>
 				</td>
-			</tr>
-			<tr>
-				<td class="resume-left">BioRxiv<br> Nov 2018</td>
-				<td class="resume-right">
-			    <a href="https://www.biorxiv.org/content/early/2018/11/06/457606">Gkmexplain: Fast and Accurate Interpretation of Nonlinear Gapped k-mer Support Vector Machines Using Integrated Gradients</a>.<br>
-			    <em><u>Avanti Shrikumar*&dagger;</u>, Eva Prakash*</em>, <em>Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br> 
-                                 Computationally efficient algorithm for explaining individual predictions made by nonlinear gapped-kmer SVMs trained on genomic sequences.<br><br></td>
 			</tr>
 			<tr>
 				<td class="resume-left">arXiv<br>July 2018</td>
@@ -151,13 +158,15 @@
 				 Showed an equivalence between <a href="https://arxiv.org/abs/1805.12233v1">Total Conductance</a>, a recently-proposed method for computing internal neuron importance, and <a href="https://arxiv.org/abs/1703.01365">Path Intergrated Gradients</a>, thereby providing a computationally efficient way to compute the former. The reformulation of Total Conductance was referred to as Neuron Integrated Gradients. Benchmarked Neuron Integrated Gradients against DeepLIFT. Colab notebook reproducing results <a href="http://bit.ly/neuronintegratedgradients">here</a><br><br>
 				</td>
 			</tr>
-			<tr>
-				<td class="resume-left">BioRxiv<br> July 2018</td>
+		    	<tr>
+				<td class="resume-left">
+			        Journal of the Royal Society Interface <br> April 2018
+				</td>
 				<td class="resume-right">
-			    <a href="https://www.biorxiv.org/content/early/2018/07/24/375345">Kipoi: accelerating the community exchange and reuse of predictive models for genomics</a>.<br>
-			    <em>&#381;iga Avsec*</em>&dagger;<em>, Roman Kreuzhuber*,  Johnny Israeli, Nancy Xu, Jun Cheng,  <u>Avanti Shrikumar</u>, Abhimanyu Banerjee,  Daniel S. Kim,  Lara Urban, Anshul Kundaje</em>&dagger;<em>,  Oliver Stegle</em>&dagger;<em>, Julien Gagneur</em>&dagger;<br> *co-first authors <br> &dagger; co-corresponding authors <br><br> 
-                                 Model zoo for genomics. I was involved in designing the API during the early stages and converted the DeepBind models to Keras using the code <a href="https://github.com/kundajelab/DeepBindToKeras">here</a><br><br></td>
-			</tr>
+			    <a href="https://royalsocietypublishing.org/doi/10.1098/rsif.2017.0387">Opportunities And Obstacles For Deep Learning In Biology And Medicine</a><br><br>
+						Collaboratively written review on deep learning for biology and medicine. I wrote the <a href="https://github.com/greenelab/deep-review/blob/71bb07775266206a497c013796e2c6c2258b8a78/sections/06_discussion.md#interpretation">section on interpretation.</a> Note that the final published version was stripped down due to word limits. I have linked to the original submission from my end.<br><br>
+				</td>
+		    	</tr>
 			<tr>
 				<td class="resume-left">arXiv<br>Feb 2018</td>
 				<td class="resume-right">
@@ -174,15 +183,6 @@
 			    <a href="https://www.biorxiv.org/content/early/2017/06/10/146431">Separable Fully-Connected Layers Improve Deep Learning Models For Genomics</a>.<br>
 			    <em>Amr Alexandari*, <u>Avanti Shrikumar</u>*, Anshul Kundaje</em>. <br>*co-first authors<br><br>
 						Adapts deep learning models for genomics by leveraging known patterns in transcription factor binding data.<br><br>
-			</td>
-		    </tr>
-			<tr>
-				<td class="resume-left">
-			        BioRxiv <br> May 2017
-				</td>
-				<td class="resume-right">
-			    <a href="https://www.biorxiv.org/content/early/2017/05/28/142760">Opportunities And Obstacles For Deep Learning In Biology And Medicine</a><br><br>
-						Collaboratively written review on deep learning for biology and medicine. I wrote the <a href="https://github.com/greenelab/deep-review/blob/71bb07775266206a497c013796e2c6c2258b8a78/sections/06_discussion.md#interpretation">section on interpretation.</a> Note that the version that appeared after proofreading by the senior authors was stripped down, likely due to word limits. I have linked to the original submission from my end.<br><br>
 			</td>
 		    </tr>
 			<tr>

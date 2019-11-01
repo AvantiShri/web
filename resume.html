@@ -59,7 +59,7 @@
 					<li>Developed <a href="https://arxiv.org/abs/1802.07024">Curve Optimization</a>, a novel method for deciding which examples a predictive model should abstain on.</li>
 					<li>Developed <a href="https://academic.oup.com/bioinformatics/article/35/14/i173/5529147">GkmExplain</a> for explaining the individual predictions made by nonlinear gapped-kmer Support Vector Machines.</li>
 					<li>Developed <a href="https://www.biorxiv.org/content/early/2017/07/07/146431">Separable Fully-Connected Layers</a> and <a href="https://www.biorxiv.org/content/early/2017/01/27/103663">Reverse-Complement Parameter Sharing</a> to exploit unique properties of genomic data for deep learning.</li>
-					<li>Developed an <a href="https://github.com/kundajelab/simdna">engine for creating simulated genomic datasets</a>; used in <a href="https://kundajelab.github.io/dragonn/">DragoNN</a>.</li>
+					<li>Developed an <a href="https://github.com/kundajelab/simdna">engine for creating simulated genomic datasets</a>; used in multiple projects to generate a simulated dataset to empirically validate a method.</li>
 					<li>Developed an <a href="https://github.com/kundajelab/momma_dragonn">internal framework</a> to facilitate the training of deep learning models in the Kundaje lab.</li>
                                        </ul>
 		        </td>
@@ -71,7 +71,7 @@
 		          June 2013 - Sep 2014
 		        </td>
 		        <td class="resume-right">
-		         Forward Deployed Engineer for the Healthcare Team.<ul><li>Primary developer for pilot project which successfully became the Healthcare Team's first enterprise deployment. Continued as primary developer until I left the company.</li><li>Created a way to integrate Palantir's two major platforms at the time into a seamless experience; success was highlighted company-wide.<li>Built multiple code libraries on my own time for use team-wide and company-wide.</li><li>2 patents filed.</li><li>Consistently rated high on bi-annual reviews. Was told that I had at times done the work of 2-3 coders and had set a new standard for productivity among my teammates.</li></ul>
+		         Forward Deployed Engineer for the Healthcare Team.<ul><li>Primary developer for pilot project which successfully became the Healthcare Team's first enterprise deployment. Continued as primary developer until I left the company.</li><li>Created a way to integrate Palantir's two major platforms at the time into a seamless experience; success was highlighted company-wide.<li>Went beyond my assigned duties to build multiple handy software utilities for use team-wide and company-wide.</li><li>Consistently rated high on bi-annual reviews. Was told that I had at times done the work of 2-3 coders and had set a new standard for productivity among my teammates.</li></ul>
 		        </td>
 		      </tr>
 		</table>
@@ -145,9 +145,9 @@
 			<tr>
 				<td class="resume-left">arXiv<br>Jan 2019</td>
 				<td class="resume-right">
-			    <a href="https://arxiv.org/abs/1901.06852">Calibration with Bias-Corrected Temperature Scaling Improves Domain Adaptation Under Label Shift in Modern Neural Networks</a>.<br>
-			    <em><u>Avanti Shrikumar&dagger;</u></em>,<em>Anshul Kundaje</em>&dagger;.<br> &dagger; co-corresponding authors<br><br>
-				 Proposed a modification of <a href="https://arxiv.org/abs/1706.04599">Temperature Scaling</a> that corrects for systematic biases in the calibrated probabilities. This allows domain adaptation under label shift to be performed using an EM algorithm, outperforming the recently-proposed <a href="https://arxiv.org/abs/1802.03916">Black Box Shift Estimation (ICML 2018)</a>.<br><br>
+			    <a href="https://arxiv.org/abs/1901.06852">Adapting to Label Shift with Bias-Corrected Calibration</a>.<br>
+			    Amr Alexandari*,<em>Anshul Kundaje</em>&dagger;<em>,<u>Avanti Shrikumar*&dagger;</u></em>.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br>
+				 Studied the impact of calibration on domain adaptation to label shift in the context of modern neural networks. Identified a principled strategy for computing source-domain priors in EM-based domain adaptation that is particularly important when the calibrated probabilities have systematic bias. When source-domain priors are computed using our proposed approach, label shift estimates from EM can perform surprisingly well compared to the recently-proposed <a href="https://arxiv.org/abs/1802.03916">Black Box Shift Estimation (ICML 2018)</a> even when predictions are not calibrated. In experiments with image classification & diabetic retinopathy detection, found that the best results were obtained by using EM-based domain adaptation with a calibration approach that contains class-specific bias parameters capable of reducing systematic bias.<br><br>
 				</td>
 			</tr>
 			<tr>
@@ -170,9 +170,9 @@
 			<tr>
 				<td class="resume-left">arXiv<br>Feb 2018</td>
 				<td class="resume-right">
-			    <a href="https://arxiv.org/abs/1802.07024">Selective Classification via Curve Optimization</a>.<br>
-			    <em>Amr Alexandari*, <u>Avanti Shrikumar*</em>&dagger;</u>, <em>Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br>
-				 Novel method for identifying examples for a predictive model to abstain on that is based on directly optimizing rank-based metrics such as auROC or auPRC<br><br>
+			    <a href="https://arxiv.org/abs/1802.07024">A Flexible and Adaptive Framework for Abstention Under Class Imbalance</a>.<br>
+			    <em><u>Avanti Shrikumar*</em>&dagger;</u>,Amr Alexandari*, <em>Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br>
+				 Proposes a framework for identifying which examples to abstain on in order to optimize for a specific metric of interest. Leverages the insight that because the calibrated probabilities can be used as a proxy for the true label, optimization is possible even when the ground-truth labels are not known. Derived computationally efficient algorithms for optimizing auROC, sensitivity at a target specificity and weighted cohen's kappa. Showed that by leveraging strategies for domain adaptation to label shift, the abstention algorithms can apply even in situations where the test-set distribution has a different class imbalance compared to the training-set distribution.<br><br>
 				</td>
 			</tr>
 			<tr>
@@ -192,7 +192,7 @@
 				<td class="resume-right">
 			    <a href="https://arxiv.org/abs/1704.02685">Learning Important Features Through Propagating Activation Differences</a>.<br>
 			    <em><u>Avanti Shrikumar</u>, Peyton Greenside, Anshul Kundaje</em>.<br><br>
-			Details a computationally efficient algorithm to explain individual predictions of a deep learning model by highlighting contribution scores to individual parts of the input. Code <a href="https://github.com/kundajelab/deeplift">here</a>.<br><br>
+			Details a computationally efficient algorithm to explain individual predictions of a deep learning model by assigning contribution scores to individual parts of the input. Code <a href="https://github.com/kundajelab/deeplift">here</a>.<br><br>
 			</td>
 		    </tr>
 			<tr>

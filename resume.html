@@ -25,7 +25,7 @@
 		<table>
 			<tr>
 				<td class ="resume-left">Stanford
-		  	<br> 2014 - <i>(2019)</i>
+		  	<br> 2014-2020</i>
 		    <br> Ph.D.
 				  	</td> 
 				<td class="resume-right"> 
@@ -50,13 +50,13 @@
 		        <td class="resume-left">
 		          <a href="https://sites.google.com/site/anshulkundaje/">Kundaje Lab</a>
 		          <br>
-		          Sep 2014 - Present
+		          Sep 2014 - Sep 2020
 		        </td>
 		        <td class="resume-right">
 					<ul>
 				        <li>Developed <a href="https://github.com/kundajelab/deeplift">DeepLIFT</a> for explaining the individual predictions made by a deep learning model</li>	
 					<li>Developed <a href="https://github.com/kundajelab/tfmodisco">TF-MoDISco</a> for understanding the patterns learned by a deep learning model.</li>
-					<li>Developed <a href="https://arxiv.org/abs/1802.07024">Curve Optimization</a>, a novel method for deciding which examples a predictive model should abstain on.</li>
+					<li>Developed <a href="https://arxiv.org/abs/1802.07024">a flexible framework</a> for deciding which examples a predictive model should abstain on when optimizing metrics other than the standard classification accuracy.</li>
 					<li>Developed <a href="https://academic.oup.com/bioinformatics/article/35/14/i173/5529147">GkmExplain</a> for explaining the individual predictions made by nonlinear gapped-kmer Support Vector Machines.</li>
 					<li>Developed <a href="https://www.biorxiv.org/content/early/2017/07/07/146431">Separable Fully-Connected Layers</a> and <a href="https://www.biorxiv.org/content/early/2017/01/27/103663">Reverse-Complement Parameter Sharing</a> to exploit unique properties of genomic data for deep learning.</li>
 					<li>Developed an <a href="https://github.com/kundajelab/simdna">engine for creating simulated genomic datasets</a>; used in multiple projects to generate a simulated dataset to empirically validate a method.</li>
@@ -77,6 +77,22 @@
 		</table>
 		<h2><a name="talks">Selected Talks</a></h2>
 		<table>
+			<tr>
+				<td class="resume-left">
+					<a href="https://icml.cc/Conferences/2020">ICML 2020</a><br> July 2020
+				</td>
+				<td class="resume-right">
+					<em>Maximum Likelihood with Bias-Corrected Calibration is Hard-To-Beat at Label Shift Domain Adaptation</em><br> Video <a href="https://www.youtube.com/watch?v=ZBXjE9QTruE">here</a>.
+				</td>
+			</tr>
+			<tr>
+				<td class="resume-left">
+					<a href="https://www.iscb.org/ismbeccb2019">ISMB 2019</a><br> July 2019
+				</td>
+				<td class="resume-right">
+					<em>GkmExplain: Fast and Accurate Interpretation of Nonlinear Gapped k-mer SVMs</em><br> Video <a href="https://www.youtube.com/watch?v=bEDx_LjNk50">here</a>.
+				</td>
+			</tr>
 			<tr>
 				<td class="resume-left">
 					<a href="https://meetings.cshl.edu/abstracts.aspx?meet=DATA&year=18">Biological Data Science</a><br> Nov 2018
@@ -129,10 +145,24 @@
 		<h2><a name="publications">Selected Publications</a></h2>
 		<table>
 			<tr>
+				<td class="resume-left">ICML Workshop on Computational Biology<br>July 2020</td>
+				<td class="resume-right">
+			    <a href="https://icml-compbio.github.io/2020/papers/WCBICML2020_paper_58.pdf">Look at the Loss: Towards Robust Detection of False Positive Feature Interactions Learned by Neural Networks on Genomic Data</a>.<br>
+			    <em>Mara Finkelstein*, <u>Avanti Shrikumar*</em>&dagger;</u><em> Anshul Kundaje</em>&dagger;<br> *co-first authors <br> &dagger; co-corresponding authors<br><br> 
+                                 Novel strategy to detect when feature interactions learned by a neural network may be false positives, by looking at the impact that the learned interaction effect has on the model's prediction loss on held-out data.<br><br></td>
+			</tr>
+			<tr>
+				<td class="resume-left">ICML 2020<br>July 2020</td>
+				<td class="resume-right">
+			    <a href="https://arxiv.org/pdf/1901.06852">Maximum Likelihood With Bias-Corrected Calibration is Hard-To-Beat at Label Shift Adaptation</a>.<br>
+			    <em>Amr Alexandari*, Anshul Kundaje</em>&dagger;, <em><u>Avanti Shrikumar*</em>&dagger;</u><br> *co-first authors <br> &dagger; co-corresponding authors<br><br> 
+                                 Algorithm that gives state-of-the-art results at a problem called domain adaptation to label shift, which arises when adapting a trained classifier to perform well in a scenario where the class proportions are different compared to when the classifier was first trained (e.g. adapting a disease predictor to account for a surge in cases due to a pandemic)<br><br></td>
+			</tr>
+			<tr>
 				<td class="resume-left">Proceedings of the ISMB<br>July 2019</td>
 				<td class="resume-right">
 			    <a href="https://academic.oup.com/bioinformatics/article/35/14/i173/5529147">Gkmexplain: Fast and Accurate Interpretation of Nonlinear Gapped k-mer SVMs</a>.<br>
-			    <em><u>Avanti Shrikumar*&dagger;</u>, Eva Prakash*</em>, <em>Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br> 
+			    <em><u>Avanti Shrikumar*</em>&dagger;</u><em>, Eva Prakash*, Anshul Kundaje</em>&dagger;<br> *co-first authors <br> &dagger; co-corresponding authors<br><br> 
                                  Computationally efficient algorithm for explaining individual predictions made by nonlinear gapped-kmer SVMs trained on genomic sequences.<br><br></td>
 			</tr>
 			<tr>
@@ -140,21 +170,13 @@
 				<td class="resume-right">
 			    <a href="https://www.nature.com/articles/s41587-019-0140-0">Kipoi: accelerating the community exchange and reuse of predictive models for genomics</a>.<br>
 			    <em>&#381;iga Avsec*</em>&dagger;<em>, Roman Kreuzhuber*,  Johnny Israeli, Nancy Xu, Jun Cheng,  <u>Avanti Shrikumar</u>, Abhimanyu Banerjee,  Daniel S. Kim,  Lara Urban, Anshul Kundaje</em>&dagger;<em>,  Oliver Stegle</em>&dagger;<em>, Julien Gagneur</em>&dagger;<br> *co-first authors <br> &dagger; co-corresponding authors <br><br> 
-                                 Model zoo for genomics. I was involved in designing the API during the early stages and converted the DeepBind models to Keras using the code <a href="https://github.com/kundajelab/DeepBindToKeras">here</a><br><br></td>
-			</tr>
-			<tr>
-				<td class="resume-left">arXiv<br>Jan 2019</td>
-				<td class="resume-right">
-			    <a href="https://arxiv.org/abs/1901.06852">Adapting to Label Shift with Bias-Corrected Calibration</a>.<br>
-			    Amr Alexandari*,<em>Anshul Kundaje</em>&dagger;<em>,<u>Avanti Shrikumar*&dagger;</u></em>.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br>
-				 Studied the impact of calibration on domain adaptation to label shift in the context of modern neural networks. Identified a principled strategy for computing source-domain priors in EM-based domain adaptation that is particularly important when the calibrated probabilities have systematic bias. When source-domain priors are computed using our proposed approach, label shift estimates from EM can perform surprisingly well compared to the recently-proposed <a href="https://arxiv.org/abs/1802.03916">Black Box Shift Estimation (ICML 2018)</a> even when predictions are not calibrated. In experiments with image classification & diabetic retinopathy detection, found that the best results were obtained by using EM-based domain adaptation with a calibration approach that contains class-specific bias parameters capable of reducing systematic bias.<br><br>
-				</td>
+                                 Model zoo for genomics. I was involved in designing the API and converted the DeepBind models to Keras using the code <a href="https://github.com/kundajelab/DeepBindToKeras">here</a><br><br></td>
 			</tr>
 			<tr>
 				<td class="resume-left">arXiv<br>July 2018</td>
 				<td class="resume-right">
 			    <a href="https://arxiv.org/abs/1802.07024">Computationally Efficient Measures of Internal Neuron Importance</a>.<br>
-			    <em><u>Avanti Shrikumar*&dagger;</u>, Jocelin Su*</em>, <em>Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br>
+			    <em><u>Avanti Shrikumar*</em>&dagger;</u><em>, Jocelin Su*, Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br>
 				 Showed an equivalence between <a href="https://arxiv.org/abs/1805.12233v1">Total Conductance</a>, a recently-proposed method for computing internal neuron importance, and <a href="https://arxiv.org/abs/1703.01365">Path Intergrated Gradients</a>, thereby providing a computationally efficient way to compute the former. The reformulation of Total Conductance was referred to as Neuron Integrated Gradients. Benchmarked Neuron Integrated Gradients against DeepLIFT. Colab notebook reproducing results <a href="http://bit.ly/neuronintegratedgradients">here</a><br><br>
 				</td>
 			</tr>
@@ -171,13 +193,13 @@
 				<td class="resume-left">arXiv<br>Feb 2018</td>
 				<td class="resume-right">
 			    <a href="https://arxiv.org/abs/1802.07024">A Flexible and Adaptive Framework for Abstention Under Class Imbalance</a>.<br>
-			    <em><u>Avanti Shrikumar*</em>&dagger;</u>,Amr Alexandari*, <em>Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br>
+			    <em><u>Avanti Shrikumar*</em>&dagger;</u><em>,Amr Alexandari*, Anshul Kundaje</em>&dagger;.<br> *co-first authors <br> &dagger; co-corresponding authors<br><br>
 				 Proposes a framework for identifying which examples to abstain on in order to optimize for a specific metric of interest. Leverages the insight that because the calibrated probabilities can be used as a proxy for the true label, optimization is possible even when the ground-truth labels are not known. Derived computationally efficient algorithms for optimizing auROC, sensitivity at a target specificity and weighted cohen's kappa. Showed that by leveraging strategies for domain adaptation to label shift, the abstention algorithms can apply even in situations where the test-set distribution has a different class imbalance compared to the training-set distribution.<br><br>
 				</td>
 			</tr>
 			<tr>
 				<td class="resume-left">
-			        ICML Comp Bio Workshop (Spotlight Talk)<br> June 2017
+			        ICML Workshop on Computational Biology (Spotlight Talk, Best Poster)<br> June 2017
 				</td>
 				<td class="resume-right">
 			    <a href="https://www.biorxiv.org/content/early/2017/06/10/146431">Separable Fully-Connected Layers Improve Deep Learning Models For Genomics</a>.<br>
@@ -212,7 +234,7 @@
 				</td>
 				<td class="resume-right">
 					<a href="http://www.ncbi.nlm.nih.gov/pubmed/25477501">Transcriptional Reversion of Cardiac Myocyte Fate During Mammalian Cardiac Regeneration</a>.<br>
-                                        <em>O'Meara CC, Wamstad JA, Gladstone RA, Fomovsky GM, Butty VL, <u>Shrikumar A</u>, Gannon JB, Boyer LA, Lee RT</em><br><br>
+					<em>O'Meara CC, Wamstad JA, Gladstone RA, Fomovsky GM, Butty VL, <u>Shrikumar A</u>, Gannon JB, Boyer LA, Lee RT</em><br><br>
 
 					Collaboration between Boyer lab at MIT and Lee lab at Harvard. I analysed RNA-seq data to study transcriptional reversion. <br><br>
 				</td>
@@ -223,7 +245,7 @@
 				</td>
 				<td class="resume-right">
                                         <a href="http://www.ncbi.nlm.nih.gov/pubmed/22981692">Dynamic and coordinated epigenetic regulation of developmental transitions in the cardiac lineage</a>.<br>
-                                        <em>Wamstad JA, Alexander JM, Truty RM, <u>Shrikumar A</u>, Li F, Eilertson KE, Ding H, Wylie JN, Pico AR, Capra JA, Erwin G, Kattman SJ, Keller GM, Srivastava D, Levine SS, Pollard KS, Holloway AK, Boyer LA, Bruneau BG.</em><br><br>
+                                        <em>Wamstad JA, Alexander JM, Truty RM, <u>Shrikumar A</u>, Li F, Eilertson KE, Ding H, Wylie JN, Pico AR, Capra JA, Erwin G, Kattman SJ, Keller GM, Srivastava D, Levine SS, Pollard KS, Holloway AK, Boyer LA&dagger;, Bruneau BG&dagger;.</em><br>&dagger; co-corresponding authors<br><br>
 					Collaboration between Boyer lab at MIT and Gladstone Institutes. I performed the bulk of bioinformatics analysis at the Boyer lab. 355 citations as of Jan 2018.<br><br>
 				</td>
 			</tr>
